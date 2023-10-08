@@ -17,7 +17,7 @@ for (const [key, component] of Object.entries(ElementPlusIconsVue)) {
 app.config.globalProperties.$api = api //挂载$api
 store.commit('addMenu', router)
 function checkRouter(path) {
-  let hasCheck = router.getRoutes().filter((route) => route.path == path).length
+  let hasCheck = router.getRoutes().filter((route) => route.path === path).length
   if (hasCheck) {
     return true
   } else {

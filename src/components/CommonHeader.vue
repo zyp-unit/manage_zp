@@ -39,7 +39,7 @@ export default defineComponent({
     const getImgSrc = () => {
       return new URL(`../assets/images/user-2.jpg`, import.meta.url).href
     }
-    let handleCollapse = () => {
+    const  handleCollapse = () => {
       store.commit('updateIsCollapse')
     }
     // 计算属性
