@@ -72,7 +72,7 @@ export default defineComponent({
       countData.value = res
     }
     onMounted(() => {
-      getTableList(),
+        getTableList(),
         getCountData(),
         getChartData()
     })
